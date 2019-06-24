@@ -25,6 +25,12 @@ a:hover {
     text-decoration: none;
 }
 
+.whats {
+    position: fixed;
+    right: 20px;
+    bottom: 8%;
+}
+
 // Topo 
 
 header {
@@ -153,17 +159,6 @@ header {
 }
 
 // Sticky Header 
-
-.stickyhead {
-    height: 143px;
-    background-position: bottom center;
-    .topo_menor {
-        display: none;
-    }
-    .hamburger {
-        top: 55px;
-    }
-}
 
 .carousel {
     background: url(../images/bg_banner.jpg) no-repeat center top -6px;

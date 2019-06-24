@@ -9,6 +9,8 @@ a, button, i { transition: all 0.5s; }
 
 a:hover { text-decoration: none; }
 
+.whats { position: fixed; right: 20px; bottom: 8%; }
+
 header { background: url(../images/assets/bg_header.jpg) top center; height: 184px; position: sticky; top: 0; z-index: 10; }
 
 header .topo_menor { height: 40px; }
@@ -58,12 +60,6 @@ header .topo_maior .navbar-light .nav-item .nav-link { font-size: 16px; color: #
 header .topo_maior .navbar-light .nav-item:last-child { padding-right: 0; }
 
 header .topo_maior .navbar-light .nav-item:first-child { padding-left: 0; }
-
-.stickyhead { height: 143px; background-position: bottom center; }
-
-.stickyhead .topo_menor { display: none; }
-
-.stickyhead .hamburger { top: 55px; }
 
 .carousel { background: url(../images/bg_banner.jpg) no-repeat center top -6px; min-height: 836px; position: relative; /* Carosel bolinhas */ }
 
