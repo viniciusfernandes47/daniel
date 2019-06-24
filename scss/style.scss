@@ -18,11 +18,21 @@ $amarelo: #e3d61b;
     }
 }
 
+a, button, i {
+    transition: all 0.5s;
+}
+a:hover {
+    text-decoration: none;
+}
+
 // Topo 
 
 header {
     background: url(../images/assets/bg_header.jpg) top center;
     height: 184px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
     .topo_menor {
         height: 40px;
         .container {
@@ -69,11 +79,17 @@ header {
             width: 18px;
             height: 18px;
             margin-right: 7px;
+            &:hover {
+                background-position: -23px -23px; 
+            }
         }
         .insta {
             background-position:-47px -2px;
             width: 18px;
             height: 18px;
+            &:hover {
+                background-position: -47px -23px;
+            }
         }
     }
     .topo_maior {
@@ -114,17 +130,38 @@ header {
                 padding-top: 21px;
             }
             .nav-item{
+                padding-left: 11px;
+                padding-right: 11px;
                 .nav-link{
                     font-size: 16px;
                     color: $azul;
                     font-weight: 700;
                     text-transform: uppercase;
                     position: relative;
-                    padding-left: 14px;
-                    padding-right: 14px;
+                    padding-left:0;
+                    padding-right: 0;
+                }
+                &:last-child{
+                    padding-right: 0;
+                }
+                &:first-child {
+                    padding-left: 0;
                 }
             }
         }
+    }
+}
+
+// Sticky Header 
+
+.stickyhead {
+    height: 143px;
+    background-position: bottom center;
+    .topo_menor {
+        display: none;
+    }
+    .hamburger {
+        top: 55px;
     }
 }
 
@@ -132,6 +169,23 @@ header {
     background: url(../images/bg_banner.jpg) no-repeat center top -6px;
     min-height: 836px;
     position: relative;
+    .previ {
+       background-position:  -75px -40px;
+        width: 30px;
+        height: 50px;
+        display: flex;
+        position: absolute;
+        transform: translateY(-328px);
+    }
+    .nexti {
+        background-position:  -118px -40px;
+        width: 30px;
+        height: 50px;
+        display: flex;
+        position: absolute;
+        transform: translateY(-328px);
+        right: 0;
+    }
     .legenda {
         text-align: center;
         padding-top: 137px;
@@ -443,6 +497,10 @@ header {
         span {
             transform: skew(34deg);
         }
+        &:hover {
+            background: #233372;
+            color: #FFF;
+        }
     }
 }
 
@@ -587,6 +645,7 @@ header {
     iframe {
         margin-top: 32px;
         padding-bottom: 29px;
+        max-width: 100%;
     }
     .siga {
         height: 42px;
@@ -625,6 +684,14 @@ header {
 footer {
     .footer_top {
         background: url(../images/assets/bg_footer.jpg) no-repeat center top;
+        .gotop {
+            background-position: -208px -83px;
+            width: 83px;
+            height: 43px;
+            position: absolute;
+            right: -68px;
+            bottom: -21px;
+        }
         .menu_roda {
             margin-bottom: 20px;
         }
@@ -711,11 +778,17 @@ footer {
             width: 18px;
             height: 18px;
             margin-right: 7px;
+            &:hover {
+                background-position: -23px -23px;
+            }
         }
         .insta {
             background-position:-47px -2px;
             width: 18px;
             height: 18px;
+            &:hover {
+                background-position: -47px -23px;
+            }
         }
         .social_icones {
             position: absolute;
@@ -746,3 +819,338 @@ footer {
         }
     }
 }
+
+// Agendar 
+
+.agendar_open {
+    position: absolute;
+    top: 40px;
+    left: 13px;
+    width: 304px;
+    z-index: 10;
+    display: none;
+    input {
+        width: 100%;
+        height: 35px;
+        background: #FFF;
+        font-weight: 500;
+        font-size: 16px;
+        color: #787a7f;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        font-style:italic;
+        border: 0;
+        margin-bottom: 9px;
+    }
+    select {
+        width: 100%;
+        height: 35px;
+        background: #FFF;
+        font-weight: 900;
+        font-size: 16px;
+        color: #787a7f;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        font-style:italic;
+        border: 0;
+        margin-bottom: 9px;
+    }
+    button {
+        width: 100%;
+        height: 35px;
+        background: #109d49;
+        color: #faff00;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        &:hover {
+            color: #109d49;
+            background: #faff00;
+        }
+    }
+    .dentro_agendar {
+        padding: 21px 14px;
+        background:#2d3d78;
+    }
+}
+
+// Chamar Agora
+.modal {
+    background: #fffc;
+}
+.modal-content {
+    background: #2e3d79;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 70px;
+    padding-right: 70px;
+    border-radius: 0;
+    .close {
+        background: url('../images/assets/sprite.png') no-repeat -177px -67px;
+        width: 24px;
+        height: 24px;
+        position: absolute;
+        right: 20px;
+        top: 14px;
+        z-index: 999;
+        opacity: 1;
+    }
+}
+
+@media (min-width: 576px) {
+    .modal-dialog {
+        max-width: 972px;
+        margin: 1.75rem auto;
+    }
+}
+
+.modal-body {
+    input {
+        width: 100%;
+        height: 35px;
+        background: #FFF;
+        font-weight: 500;
+        font-size: 16px;
+        color: #787a7f;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        font-style:italic;
+        border: 0;
+        margin-bottom: 9px;
+    }
+    h2 {
+        font-weight: 700;
+        font-size: 32px;
+        color: #faff00;
+        margin-bottom: 0;
+        line-height: 34px;
+        text-align: left;
+        padding-top: 0;
+    }
+    p {
+        font-weight: 600;
+        font-style: italic;
+        color: #FFF;
+        font-size: 16px;
+        line-height: 34px;
+        margin-bottom: 19px;
+        margin-top: -2px;
+        text-align: left;
+    }
+    button {
+        width: 100%;
+        height: 35px;
+        background: #109d49;
+        color: #faff00;
+        font-size: 16px;
+        font-weight: 900;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        &:hover {
+            color: #109d49;
+            background: #faff00;
+        }
+    }
+
+}
+
+/* Menu mobile */
+
+/* start menu */
+
+.menu_sociais {
+    flex-grow: 1 !important;
+    .h-100 {
+        justify-content: space-around;
+    }
+}
+
+.hamburger {
+    position: absolute;
+    display:none;
+    top: 97px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 20;
+    padding: 10px 15px 5px;
+  }
+  .midias {
+    display: flex;
+    mix-blend-mode: screen;
+    .fb {
+        background-position: -23px -2px;
+        width: 18px;
+        height: 18px;
+        margin-right: 7px;
+        &:hover {
+            background-position: -23px -23px; 
+        }
+    }
+    .insta {
+        background-position:-47px -2px;
+        width: 18px;
+        height: 18px;
+        &:hover {
+            background-position: -47px -23px;
+        }
+    }
+    }
+    .mobile_menu {
+        .fale_conosco {
+            font-weight: 900;
+            font-size: 13px;
+            color: #FFF;
+            text-transform: uppercase;
+            line-height: 15px;
+            padding-top: 12px;
+            display: block !important;
+        }
+        .phone {
+            background-position: -2px -2px;
+            width: 14px;
+            height: 14px;
+            float: left;
+            margin-right: 13px;
+            mix-blend-mode: screen;
+        }
+        .d-flex {
+            flex-wrap: wrap;
+        }
+    }
+
+  .hamburger span {
+  vertical-align: middle;
+  }
+  .hamburger .bars {
+  display: block;
+  position: relative;
+  width: 61px;
+  height: 8px;
+  background: #109d49;
+  border-radius: 0px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  }
+  .hamburger .bars:before, .hamburger .bars:after {
+  position: absolute;
+  content: " ";
+  width: 100%;
+  height: 8px;
+  background: #109d49;
+    border-radius: 0px;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  }
+  .hamburger .bars:before {
+  top: 11px;
+  }
+  .hamburger .bars:after {
+  bottom: 11px;
+  }
+  
+  .open_menu .hamburger .bars {
+  background-color: transparent;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  width: 40px;
+  }
+  .open_menu .hamburger .bars::before {
+  top: 0;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  }
+  .open_menu .hamburger .bars::after {
+  bottom: 0;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  }
+  
+  .mobile_menu {
+  width: 290px;
+  height: 100%;
+  padding: 75px 20px 0;
+  background: #233372;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.18);
+  position: fixed;
+  right: -100%;
+  top: 0;
+  opacity: 0;
+  z-index: 999999;
+  margin-top: 0;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  }
+  .mobile_menu ul li a {
+    color: #ffffff;
+    width: 100%;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    text-decoration: none;
+    transition: .5s;
+    display: block;
+    border-radius: 0;
+    letter-spacing: 0.1em;
+    margin-left: 0;
+    border-bottom: 1px solid #fff;
+  }
+  .open_menu .hamburger {
+    top: 29px;
+    z-index: 9999999;
+  }
+  .mobile_menu ul {
+  padding: 0;
+  list-style: none;
+  text-align: left;
+  }
+  .mobile_menu li {
+    width: 100%;
+  }
+  .sticky {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  }
+  .mobile_menu a:hover {
+  color: white;
+  }
+  .open_menu .mobile_menu {
+  right: 0;
+  opacity: 1;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  }
+  .mobile_menu:hover {
+  overflow-y: auto;
+  }
+  .mobile_menu .socialTopo {
+    margin: 0;
+    justify-content: flex-end;
+    padding-top: 10px;
+  }

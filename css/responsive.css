@@ -1,0 +1,66 @@
+@media (max-width: 480px) { .hamburger { display: block; }
+  .fale_conosco { display: none; }
+  .social_icones { display: none !important; }
+  header .topo_menor .agendar { margin-right: 0; margin-left: 17px; }
+  .agendar_open { left: 29px; z-index: 99999999; }
+  .logo img { width: 180px; }
+  header .topo_maior .logo { padding-top: 37px; }
+  .carousel .legenda h1 { font-size: 60px; }
+  .carousel .legenda h3 { font-size: 28px; }
+  .eficiencia img { display: none; }
+  .eficiencia h2 { line-height: 34px; margin-bottom: 22px; text-align: center; }
+  .eficiencia p { text-align: center; padding: 0 10px; }
+  .cada_depoimento { flex-wrap: wrap; justify-content: center; text-align: center; }
+  .depoimentos .texto_pessoa h3 { margin-top: 20px; }
+  .servicos .dentro_servico { padding: 0 60px; }
+  .nos_ligamos { height: 385px; background-position-x: -974px; background-repeat-y: repeat; }
+  .nos_ligamos .container { flex-wrap: wrap; justify-content: center; }
+  .nos_ligamos h3 { text-align: center; margin-right: 0; margin: 0 auto; height: auto; padding-top: 25px; }
+  .nos_ligamos .telefones { flex-wrap: wrap; left: 3px; margin-left: 0px; }
+  .nos_ligamos .formularios { padding-top: 16px; padding-left: 20px; padding-right: 20px; }
+  .nos_ligamos button { width: 95%; left: -21px; top: 14px; }
+  .homem_c { display: none; }
+  .contato .tele { justify-content: center; margin-bottom: 17px; }
+  .contato h2 { text-align: center; }
+  .contato .location { flex-wrap: wrap; justify-content: center; text-align: center; padding: 0 51px; }
+  .contato .location i { margin-bottom: 5px; }
+  .contato .siga { width: 90%; margin: 0 auto; }
+  footer .footer_top { background-color: #eee; padding-bottom: 50px; }
+  footer .footer_top .menu_roda { display: none !important; }
+  footer .footer_top .social_icones { display: none !important; }
+  footer .footer_top .container { flex-wrap: wrap; justify-content: center; }
+  footer .footer_top .logo_roda { margin: 0 auto; }
+  footer .footer_top .direita_roda { padding-top: 0; margin: 0 auto; }
+  footer .footer_top .phone_rodape, footer .footer_top .loca_rodape { text-align: left; justify-content: left; }
+  footer .footer_top .loca_r { width: 28px; }
+  footer .footer_top .phone_r { width: 20px; }
+  footer .footer_top .gotop { right: 15px; bottom: -66px; }
+  footer .footer_bottom { height: 137px; }
+  footer .footer_bottom .container { flex-wrap: wrap; text-align: center; padding: 0 61px; }
+  footer .footer_bottom .design { margin: 0 auto; margin-top: 15px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) { .hamburger { display: block; }
+  .cada_depoimento { flex-wrap: wrap; justify-content: center; text-align: center; }
+  .depoimentos .texto_pessoa h3 { margin-top: 20px; }
+  .nos_ligamos { background-position-x: -508px; }
+  .nos_ligamos .formularios { padding-top: 40px; }
+  .nos_ligamos h3 { font-size: 29px; width: 293px; }
+  .nos_ligamos .container { padding: 0; }
+  .nos_ligamos .telefones { flex-wrap: wrap; }
+  .nos_ligamos .telefones .cada_input:last-child { position: relative; left: -36px; }
+  .nos_ligamos button { top: 20px; left: -111px; }
+  .eficiencia { max-width: 100%; overflow: hidden; }
+  .eficiencia img { margin-top: 48px; }
+  .eficiencia h3 { font-size: 20px; }
+  .contato .homem_c { display: none; }
+  .contato .container { text-align: center; }
+  .contato .tele, .contato .location { justify-content: center; }
+  .contato .siga { margin: 0 auto; }
+  footer .footer_top { background-color: #eee; padding-bottom: 50px; }
+  footer .footer_top .menu_roda { display: none !important; }
+  footer .footer_top .social_icones { display: none !important; }
+  footer .footer_top .container { flex-wrap: wrap; justify-content: center; }
+  footer .footer_top .logo_roda { margin: 0 auto; }
+  footer .footer_top .direita_roda { padding-top: 0; margin: 0 auto; }
+  footer .footer_top .phone_rodape, footer .footer_top .loca_rodape { text-align: center; justify-content: center; }
+  footer .footer_top .gotop { right: 0; bottom: -64px; } }
