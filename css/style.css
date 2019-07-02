@@ -9,7 +9,7 @@ a, button, i { transition: all 0.5s; }
 
 a:hover { text-decoration: none; }
 
-.whats { position: fixed; right: 20px; bottom: 8%; }
+.whats { position: fixed; right: 20px; bottom: 30%; }
 
 header { background: url(../images/assets/bg_header.jpg) top center; height: 184px; position: sticky; top: 0; z-index: 10; }
 
@@ -129,12 +129,6 @@ header .topo_maior .navbar-light .nav-item:first-child { padding-left: 0; }
 
 .depoimentos .slick-list { margin: 0 47px; margin-left: 23px; }
 
-.depoimentos .slick-prev { background: url("../images/assets/sprite.png") no-repeat -156px -45px; width: 12px; height: 20px; left: 0; }
-
-.depoimentos .slick-next { background: url("../images/assets/sprite.png") no-repeat -173px -45px; width: 12px; height: 20px; right: 0; }
-
-.depoimentos .slick-next:before, .depoimentos .slick-prev:before { content: ''; }
-
 .depoimentos .slick-dots { display: flex; justify-content: center; align-items: center; bottom: -45px; }
 
 .depoimentos .slick-dots li { background: url("../images/assets/sprite.png") no-repeat -211px -48px; width: 14px; height: 14px; }
@@ -142,6 +136,12 @@ header .topo_maior .navbar-light .nav-item:first-child { padding-left: 0; }
 .depoimentos .slick-dots li button { display: none; }
 
 .depoimentos .slick-dots .slick-active { background: url("../images/assets/sprite.png") no-repeat -194px -49px; width: 12px; height: 12px; }
+
+.slick-prev { background: url("../images/assets/sprite.png") no-repeat -156px -45px; width: 12px; height: 20px; left: 0; }
+
+.slick-next { background: url("../images/assets/sprite.png") no-repeat -173px -45px; width: 12px; height: 20px; right: 0; }
+
+.slick-next:before, .slick-prev:before { content: ''; }
 
 .servicos { background: #eeeeee; padding-bottom: 30px; }
 

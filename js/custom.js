@@ -1,9 +1,29 @@
+$(function() {                      
+  $(".nav-item").click(function() {  
+    $('.nav-item').removeClass("active");      
+    $(this).addClass("active");      
+  });
+});
+
+
 $('.listagem_depoimentos').slick({
     dots: true,
     infinite: false,
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1
+  });
+
+  $('#mobile_servicos').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    mobileFirst: true,
+    responsive: [
+          {
+              breakpoint: 768,
+              settings: 'unslick'
+          }
+    ]
   });
 
   $(".agendar").click(function(){

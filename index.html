@@ -262,7 +262,7 @@
     <section class="servicos" id="servicos">
         <div class="container">
             <h2 data-aos="fade-up">Serviços & <span>Especialidades:</span></h2>
-            <div class="row">
+            <div class="row" id="mobile_servicos">
                 <div class="col-lg-3 col-md-4" data-aos="fade-down">
                     <div class="dentro_servico">
                         <div class="imagem_servico">
@@ -511,7 +511,10 @@
     </footer>
 
     <a href="#" class="whats">
-        <img src="images/assets/whats.png" alt="">
+        <picture>
+            <source media="(max-width: 460px)" srcset="images/assets/whats-mobile.png">
+                <img src="images/assets/whats.png" alt="">
+        </picture>
     </a>
 
 <!-- Scripts footer --> 

@@ -40,7 +40,8 @@
   footer .footer_bottom .design { margin: 0 auto; margin-top: 15px; }
   .stickyhead { height: 143px; background-position: bottom center; }
   .stickyhead .topo_menor { display: none; }
-  .stickyhead .hamburger { top: 55px; } }
+  .stickyhead .hamburger { top: 55px; }
+  .whats { right: 32px; bottom: 8%; } }
 
 @media (min-width: 768px) and (max-width: 1024px) { .hamburger { display: block; }
   .cada_depoimento { flex-wrap: wrap; justify-content: center; text-align: center; }
