@@ -11,7 +11,7 @@ a:hover { text-decoration: none; }
 
 .whats { position: fixed; right: 20px; bottom: 30%; }
 
-header { background: url(../images/assets/bg_header.jpg) top center; height: 184px; position: sticky; top: 0; z-index: 10; }
+header { background: url(../images/assets/bg_header.jpg) top center; height: 184px; position: sticky; position: -webkit-sticky; position: -moz-sticky; position: -ms-sticky; position: -o-sticky; top: 0; z-index: 10; }
 
 header .topo_menor { height: 40px; }
 

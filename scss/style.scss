@@ -37,6 +37,10 @@ header {
     background: url(../images/assets/bg_header.jpg) top center;
     height: 184px;
     position: sticky;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
     top: 0;
     z-index: 10;
     .topo_menor {
