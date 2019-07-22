@@ -362,3 +362,9 @@ footer .footer_bottom .design img { width: 57px; height: 35px; margin-left: 6px;
 .mobile_menu:hover { overflow-y: auto; }
 
 .mobile_menu .socialTopo { margin: 0; justify-content: flex-end; padding-top: 10px; }
+
+.stickyhead { height: 138px; }
+
+.stickyhead .topo_maior { height: 98px; }
+
+.stickyhead .logo img { width: 58%; }

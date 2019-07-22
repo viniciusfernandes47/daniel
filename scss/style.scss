@@ -1152,3 +1152,13 @@ footer {
     justify-content: flex-end;
     padding-top: 10px;
   }
+
+  .stickyhead {
+    height: 138px;
+    .topo_maior {
+        height: 98px;
+    }
+    .logo img {
+        width: 58%;
+    }
+  }
